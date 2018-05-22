@@ -1,0 +1,6 @@
+data totalsales;
+input date mmddyy10. +2 amount comma5.;
+datalines;
+01/02/2000  1,234
+02/13/2000  2,345
+;
