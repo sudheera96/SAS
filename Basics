@@ -1,0 +1,15 @@
+Data weight_club;
+input idnumber 1-4 name$ 6-24 team$ startweight endweight;
+loss=startweight-endweight;
+datalines;
+1023 david shaw         red 189 165
+1029 amelia dou           pink 69 50
+1023 sri su             red 76 5
+;
+proc print data=weight_club;
+title 'Health club data';
+
+proc tabulate data=weight_club;
+class team;
+var startweight endweight loss;
+table team,mean*(startweight endweight loss);
