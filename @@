@@ -1,0 +1,7 @@
+data body_fat;
+input Gender $ PercentFat @@;
+datalines;
+m 13.3 f 22
+m 22 f 23.2
+m 16 m 12
+;
